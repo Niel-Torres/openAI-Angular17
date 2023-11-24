@@ -1,0 +1,13 @@
+<h1>Buscador de imágenes con openIA en Angular 17</h1>
+<label>Introduce el texto de la imágen que quieres buscar: </label>
+<input type="text" [formControl]="inputCtrl" (keydown.enter)="generateImg()">
+
+<!--
+<div *ngIf="image">
+    <input type="image" src="{{image}}">
+</div>
+-->
+
+@if (image) {
+    <input type="image" src="{{image}}">
+}
